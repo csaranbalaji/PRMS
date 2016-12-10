@@ -22,7 +22,7 @@ td {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">WebSiteName</a>
+      <a class="navbar-brand" href="#">PRMS</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       
@@ -34,19 +34,19 @@ td {
   </div>
 </nav>
 <?php
-session_start();
+		session_start();
 		$myfile = fopen("/var/www/html/pass.txt", "r") or die("Unable to open file!");
 		$password = fread($myfile,filesize("/var/www/html/pass.txt"));
 		fclose($myfile);
 	   
 		$con = mysql_connect("localhost","root",$password) or die("error in database connection" . mysql_error());
         @mysql_select_db(patient) or die( "Unable to select database");
-$aadhar=$_SESSION['aadhar'];
+		$aadhar=$_SESSION['aadhar'];
 
-$query = "SELECT * FROM personal WHERE aadhar='$aadhar'"; 
-$result = mysql_query($query) or die("error in selecting data in db" . mysql_error());
-$dquery = "select date_format(dob,'%d-%m-%Y') as dob from personal WHERE aadhar='$aadhar'"; 
-$dresult = mysql_query($dquery) or die("error in selecting data in db" . mysql_error());
+		$query = "SELECT * FROM personal WHERE aadhar='$aadhar'"; 
+		$result = mysql_query($query) or die("error in selecting data in db" . mysql_error());
+		$dquery = "select date_format(dob,'%d-%m-%Y') as dob from personal WHERE aadhar='$aadhar'"; 
+		$dresult = mysql_query($dquery) or die("error in selecting data in db" . mysql_error());
 		$name=mysql_result($result,0,"name");
 		$aadhar=mysql_result($result,0,"aadhar");
 	    $address=mysql_result($result,0,"address");

@@ -103,7 +103,7 @@ input[type=submit]:hover {
 	   
 	    
 		$query="update proofs set $proof=$idnum where aadhar='$aadhar'";
-	  $result=mysqli_query($con,$query) or die("error in inserting data in db" . mysql_error());
+		$result=mysqli_query($con,$query) or die("error in inserting data in db" . mysql_error());
 	  		
 		
 		

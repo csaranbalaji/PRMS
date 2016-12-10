@@ -178,33 +178,33 @@ input[type=submit]:hover {
 		
 		
 		
-   $equery = "SELECT * FROM personal WHERE email='$email'" ;
+	   $equery = "SELECT * FROM personal WHERE email='$email'" ;
 
-   $eresult = mysqli_query($con,$equery) ;
+	   $eresult = mysqli_query($con,$equery) ;
 
-   if( mysqli_num_rows($eresult) > 0 ){
-    die( "<p1><center>There is already a user with that email!</center></p1>" ) ;
-   }
+	   if( mysqli_num_rows($eresult) > 0 ){
+		die( "<p1><center>There is already a user with that email!</center></p1>" ) ;
+	   }
 
 
-	    $query="Insert into personal values('$aadhar','$name','$address','$gender','$mobile','$emergency',STR_TO_DATE('$dob', '%d-%m-%Y'),'$blood','$email','$pass')";
-	  $result=mysqli_query($con,$query) or die("<p1><center>error in inserting data in db</center></p1>" . mysql_error());
-	  		
-		
-		
-		if($result>0)
-		{
-			ob_clean();
-		 echo nl2br("\n <p1>Registered succesfully!!! </p1>");
-		 
-		 $_SESSION['Aadhar']=$aadhar;
-		 echo '<script type="text/javascript">';
-        echo 'window.location.href="newproof.php";';
-        echo '</script>';
-		}
+			$query="Insert into personal values('$aadhar','$name','$address','$gender','$mobile','$emergency',STR_TO_DATE('$dob', '%d-%m-%Y'),'$blood','$email','$pass')";
+		  $result=mysqli_query($con,$query) or die("<p1><center>error in inserting data in db</center></p1>" . mysql_error());
+				
+			
+			
+			if($result>0)
+			{
+				ob_clean();
+			 echo nl2br("\n <p1>Registered succesfully!!! </p1>");
+			 
+			 $_SESSION['Aadhar']=$aadhar;
+			 echo '<script type="text/javascript">';
+			echo 'window.location.href="newproof.php";';
+			echo '</script>';
+			}
 			
 	
-}	
+	}	
 	 ?>
 </body>
 </html>

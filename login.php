@@ -5,8 +5,8 @@
 	$myfile = fopen("/var/www/html/pass.txt", "r") or die("Unable to open file!");
 	$password = fread($myfile,filesize("/var/www/html/pass.txt"));
 	fclose($myfile);
-   $db = mysqli_connect("localhost","root",$password);
-   mysqli_select_db($db ,"patient") or die("error to select the db" . mysql_error());
+	$db = mysqli_connect("localhost","root",$password);
+	mysqli_select_db($db ,"patient") or die("error to select the db" . mysql_error());
    
    
    if($_SERVER["REQUEST_METHOD"] == "POST") {
