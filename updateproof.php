@@ -49,7 +49,7 @@ input[type=submit]:hover {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">WebSiteName</a>
+      <a class="navbar-brand" href="#">PRMS</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       
