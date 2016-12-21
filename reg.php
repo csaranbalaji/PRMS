@@ -27,15 +27,7 @@ session_start();
         </script>
 </head>
 <style>
-input[type=text],[type=password],[type=email],[type=address], select {
-    width: 100%;
-    padding: 6px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
+
 body {
     background-color: lavender;
 }
@@ -86,25 +78,26 @@ input[type=submit]:hover {
 	       <table align='center' >
 		   <tr>
 	          <td>Aadhar Number</td>
-			  <td><input id="Aadhar" type="text" name="Aadhar"  pattern=".{12,12}" maxlength="12" required/></td>	   
+			  <td><input id="Aadhar" class="form-control" type="text" name="Aadhar"  pattern=".{12,12}" maxlength="12" required/></td>	   
 		   </tr>
 		   <tr> 
 	          <td>Name</td>
-			  <td><input id="Name" type="text" name="Name"  required maxlength="30" /></td>	   
+			  <td><input id="Name" class="form-control" type="text" name="Name"  required maxlength="30" /></td>	   
 		   </tr>
 		   <tr>
 	          <td>DOB</td>
-			  <td><input id="DOB" type="text" name="DOB" required /></td>	   
+			  <td><input id="DOB" class="form-control" type="text" name="DOB" required /></td>	   
 		   </tr>
 		   <tr>
 	          <td>Gender</td>
-			  <td><input type="radio"  required name="Gender"  value="F">Female
-				<input type="radio" required name="Gender"  value="M">Male
+			  <td><input type="radio" required name="Gender"  value="M"> Male &nbsp;
+			  <input type="radio"  required name="Gender"  value="F"> Female
+				
 			</td>
 		   </tr>
 		    <tr>
 	          <td>Blood group</td>
-			  <td> <select  required name="Blood">
+			  <td> <select class="form-control" required name="Blood">
 				  <option value="">Select...</option>
 					<option value="O+">O+</option>
 					<option value="A+">A+</option>
@@ -119,25 +112,25 @@ input[type=submit]:hover {
 		   
 		      <tr>
 	          <td>Address</td>
-			  <td><textarea name="Address" type="address" required id="Address" rows=3 cols=30 maxlength="200"></textarea></td>	   
+			  <td><textarea class="form-control" name="Address" type="address" required id="Address" rows=3 cols=30 maxlength="200"></textarea></td>	   
 		   </tr>
 		   <tr>
 	          <td>Mobile Number</td>
-			  <td><input id="Mobile"  required type="text" name="Mobile" pattern="[789][0-9]{9}" pattern=".{10,10}" maxlength="10" >
+			  <td><input id="Mobile" class="form-control" required type="text" name="Mobile" pattern="[789][0-9]{9}" pattern=".{10,10}" maxlength="10" >
 			  </td>	   
 		   </tr>
 		   <tr>
 	          <td>Emergency contact Number</td>
-			  <td><input id="Emergency" required type="text" name="Emergency"  pattern="[789][0-9]{9}" pattern=".{10,10}" maxlength="10" /></td>	   
+			  <td><input id="Emergency" class="form-control" required type="text" name="Emergency"  pattern="[789][0-9]{9}" pattern=".{10,10}" maxlength="10" /></td>	   
 		   </tr>
 		   <tr>
 	          <td>Email</td>
-			  <td><input id="Email" required type="email" name="Email"/></td>
+			  <td><input id="Email" class="form-control" required type="email" name="Email"/></td>
 			     
 		   </tr>
 		   <tr>
 	          <td>Password</td>
-			  <td><input id="Password"  required type="password" name="Password" maxlength="10"/></td>
+			  <td><input id="Password" class="form-control" required type="password" name="Password" maxlength="10"/></td>
 			  
 			  <td><label><input type="checkbox" id="check" name="check" value="on" onchange="Showpass();"> Show Password</label></td>
               	   
