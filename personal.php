@@ -59,16 +59,16 @@ td {
 
 		
 		echo "<center><u><b>Personal data</b></u><br><br></center>";
-		echo '<table cellpadding="5" cellspacing="10" align="center" class="db-table">';
+		echo '<table  align="center" class="table table-striped table-bordered db-table">';
 		
-		echo "<tr><td>Name </td><td>: $name</td></tr>";
-		echo "<tr><td>Aadhar </td><td>: $aadhar</td></tr>";
-		echo "<tr><td>Address </td><td>: $address</td></tr>";
-		echo "<tr><td>Mobile </td><td>: $mobile</td></tr>";
-		echo "<tr><td>DOB </td><td>: $dob</td></tr>";
-		echo "<tr><td>Gender </td><td>: $gender</td></tr>";
-		echo "<tr><td>Emergency no </td><td>: $emergency</td></tr>";
-		echo "<tr><td>Blood group <td>: $blood</td></tr>";
+		echo "<tr><td>Name </td><td> $name</td></tr>";
+		echo "<tr><td>Aadhar </td><td> $aadhar</td></tr>";
+		echo "<tr><td>Address </td><td> $address</td></tr>";
+		echo "<tr><td>Mobile </td><td> $mobile</td></tr>";
+		echo "<tr><td>DOB </td><td> $dob</td></tr>";
+		echo "<tr><td>Gender </td><td> $gender</td></tr>";
+		echo "<tr><td>Emergency no </td><td> $emergency</td></tr>";
+		echo "<tr><td>Blood group <td> $blood</td></tr>";
 		
 		echo '</table><br />';
 ?>

@@ -55,13 +55,13 @@ td {
 
 		
 		echo "<center><u><b>Proofs</b></u></center><br><br>";
-		echo '<table cellpadding="5" align="center" cellspacing="10" class="db-table">';
+		echo '<table align="center" class="table table-striped table-bordered db-table">';
 		
-		echo "<tr><td>licence </td><td>: $licence</td></tr>";
-		echo "<tr><td>voter id </td><td>: $voter</td></tr>";
-		echo "<tr><td>ration card </td><td>: $ration</td></tr>";
-		echo "<tr><td>pan card </td><td>: $pan</td></tr>";
-		echo "<tr><td>passport number </td><td>: $passport</td></tr>";
+		echo "<tr><td>licence </td><td> $licence</td></tr>";
+		echo "<tr><td>voter id </td><td> $voter</td></tr>";
+		echo "<tr><td>ration card </td><td> $ration</td></tr>";
+		echo "<tr><td>pan card </td><td> $pan</td></tr>";
+		echo "<tr><td>passport number </td><td> $passport</td></tr>";
 		
 		echo '</table><br />';
 		

@@ -11,15 +11,7 @@ session_start();
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 <style>
-input[type=text] {
-    width: 100%;
-    padding: 6px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
+
 input[type=submit] {
     width: 100%;
     background-color: #4CAF50;
@@ -70,24 +62,24 @@ input[type=submit]:hover {
 	       <table align='center'>
 		   <tr>
 	          <td>Driving Licence</td><td> </td>
-			  <td><input id="Licence" type="text" name="Licence"  pattern=".{16,16}" maxlength="16" /></td>	 
+			  <td><input id="Licence" class="form control" type="text" name="Licence"  pattern=".{16,16}" maxlength="16" /></td>	 
 		   </tr>
 		   <tr>
 	          <td>Voter ID</td><td> </td>
-			  <td><input id="Voter" type="text" name="Voter" pattern=".{12,12}" maxlength="12"/></td>	   
+			  <td><input id="Voter" class="form control" type="text" name="Voter" pattern=".{12,12}" maxlength="12"/></td>	   
 		   </tr>
 		   <tr>
 	          <td>Ration Card</td><td> </td>
-			  <td><input id="Ration" type="text" name="Ration" pattern=".{10,10}" maxlength="10"/></td>	   
+			  <td><input id="Ration" class="form control" type="text" name="Ration" pattern=".{10,10}" maxlength="10"/></td>	   
 		   </tr>
 		   <tr>
 	          <td>Pan Card</td><td> </td>
-			  <td><input id="Pan" type="text" name="Pan" pattern=".{10,10}" maxlength="10" >
+			  <td><input id="Pan" class="form control" type="text" name="Pan" pattern=".{10,10}" maxlength="10" >
 			  </td>	   
 		   </tr>
 		   <tr>
 	          <td>Passport</td><td> </td>
-			  <td><input id="Passport" type="text" name="Passport"  pattern=".{10,10}"  maxlength="10" /></td>	   
+			  <td><input id="Passport" class="form control" type="text" name="Passport"  pattern=".{10,10}"  maxlength="10" /></td>	   
 		   </tr>
 		   <tr>
 	          <td></td>
